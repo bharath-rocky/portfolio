@@ -77,7 +77,7 @@ const ContactForm = () => {
           className="w-full bg-slate-900 text-grassGreen-300 focus:outline-none p-2 placeholder:italic placeholder:text-slate-500 rounded-md"
         />
         {error && error.fullName && (
-          <p className="text-sm !mt-1 text-white">{error.fullName}</p>
+          <p className="text-sm !mt-1 text-red-500">{error.fullName}</p>
         )}
       </div>
       {/* EMAIL */}
@@ -95,7 +95,7 @@ const ContactForm = () => {
           className="w-full bg-slate-900 text-grassGreen-300 focus:outline-none p-2 placeholder:italic placeholder:text-slate-500 rounded-md"
         />
         {error && error.email && (
-          <p className="text-sm !mt-1 text-white">{error.email}</p>
+          <p className="text-sm !mt-1 text-red-500">{error.email}</p>
         )}
       </div>
       {/* MESSAGE */}
@@ -114,7 +114,7 @@ const ContactForm = () => {
           className="w-full rounded-md bg-slate-900 text-grassGreen-300 focus:outline-none p-2 placeholder:italic placeholder:text-slate-500"
         ></textarea>
         {error && error.message && (
-          <p className="text-sm !mt-1 text-white">{error.message}</p>
+          <p className="text-sm !mt-1 text-red-500">{error.message}</p>
         )}
       </div>
       <input

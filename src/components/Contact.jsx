@@ -11,7 +11,7 @@ const Contact = () => {
         subHeading={"I AM HERE FOR YOU"}
         cls={"pb-4"}
       />
-      <div className="md:max-w-[1240px] mx-auto bg-gradient-to-br from-grassGreen-400 to-grassGreen-100 p-6 sm:px-20 sm:py-14 grid grid-cols-1 lg:grid-cols-2 gap-16 rounded-md">
+      <div className="md:max-w-[1240px] mx-auto bg-slate-300 p-6 sm:px-20 sm:py-14 grid grid-cols-1 lg:grid-cols-2 gap-16 rounded-md">
         <div className="order-last lg:order-first">
           <h2 className="font-bold text-xl text-center lg:text-left sm:text-2xl md:text-3xl">
             Send Me a Message
