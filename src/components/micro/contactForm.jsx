@@ -74,7 +74,7 @@ const ContactForm = () => {
           placeholder="Bharath Rocky"
           onChange={(e) => handleOnChange(e)}
           value={form.fullName}
-          className="w-full bg-slate-900 text-grassGreen-300 focus:outline-none p-2 placeholder:italic placeholder:text-slate-500"
+          className="w-full bg-slate-900 text-grassGreen-300 focus:outline-none p-2 placeholder:italic placeholder:text-slate-500 rounded-md"
         />
         {error && error.fullName && (
           <p className="text-sm !mt-1 text-white">{error.fullName}</p>
@@ -92,7 +92,7 @@ const ContactForm = () => {
           placeholder="me@example.com"
           onChange={(e) => handleOnChange(e)}
           value={form.email}
-          className="w-full bg-slate-900 text-grassGreen-300 focus:outline-none p-2 placeholder:italic placeholder:text-slate-500"
+          className="w-full bg-slate-900 text-grassGreen-300 focus:outline-none p-2 placeholder:italic placeholder:text-slate-500 rounded-md"
         />
         {error && error.email && (
           <p className="text-sm !mt-1 text-white">{error.email}</p>
@@ -111,7 +111,7 @@ const ContactForm = () => {
           rows="4"
           onChange={(e) => handleOnChange(e)}
           value={form.message}
-          className="w-full bg-slate-900 text-grassGreen-300 focus:outline-none p-2 placeholder:italic placeholder:text-slate-500"
+          className="w-full rounded-md bg-slate-900 text-grassGreen-300 focus:outline-none p-2 placeholder:italic placeholder:text-slate-500"
         ></textarea>
         {error && error.message && (
           <p className="text-sm !mt-1 text-white">{error.message}</p>
@@ -121,7 +121,7 @@ const ContactForm = () => {
         type="submit"
         value="Submit"
         onClick={(e) => handleOnSubmit(e)}
-        className="cursor-pointer border-2 border-black px-3 font-semibold py-2 w-fit hover:text-grassGreen-300 hover:bg-slate-800"
+        className="cursor-pointer rounded-md border-2 border-black px-3 font-semibold py-2 w-fit hover:text-grassGreen-300 hover:bg-slate-800"
       />
     </form>
   );

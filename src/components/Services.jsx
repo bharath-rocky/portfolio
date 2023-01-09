@@ -39,7 +39,7 @@ export const Services = () => {
         {serviceData.map((data, i) => (
           <div
             key={i}
-            className="text-white mt-16 md:mt-24 my-8 flex flex-col items-center bg-opacity-0 bg-gradient-to-b from-grassGreen-400 to-grassGreen-100 hover:from-grassGreen-400/75 hover:to-grassGreen-100/25"
+            className="text-white rounded-md mt-16 md:mt-24 my-8 flex flex-col items-center bg-opacity-0 bg-gradient-to-b from-grassGreen-400 to-grassGreen-100 hover:from-grassGreen-400/75 hover:to-grassGreen-100/25"
             data-aos={data.animate}
             data-aos-duration="1000"
           >

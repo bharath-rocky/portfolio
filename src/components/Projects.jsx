@@ -20,7 +20,7 @@ export const Projects = () => {
     setProjectData(getProjectDataOnTabClick(tileCount, activeTab));
     setActiveData(getActiveData(projectData));
     setShowNav(projectData.length > tileCount);
-  }, [activeTab, projectData]);
+  }, [activeTab, projectData, tileCount]);
 
   const handleTabClick = (e) => {
     setActiveTab(e.target.name);

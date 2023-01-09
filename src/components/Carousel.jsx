@@ -45,7 +45,7 @@ const Carousel = () => {
               src={Profile}
               alt="Rocky's Profile"
               data-aos="zoom-out-down"
-              className="h-60 shadow-lg shadow-neutral-500 sm:h-72 relative z-10"
+              className="h-60 shadow-md shadow-neutral-700 sm:h-72 relative z-10"
             />
             <img
               src={Rect}

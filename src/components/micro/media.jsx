@@ -44,7 +44,7 @@ const Media = () => {
     <ul className="flex items-center space-x-4">
       {mediaLink.map(({ icon, link }, index) => (
         <li key={index} data-aos="flip-left">
-          <a href={link} target="_blank">
+          <a href={link} target="_blank" rel="noreferrer">
             {icon}
           </a>
         </li>

@@ -3,12 +3,16 @@ import React from "react";
 const Card = (props) => {
   let { img_url, title, label, index } = props;
   return typeof index === "string" && index.includes("show") ? (
-    <div className="bg-transparent relative w-[44%] p-10">{""}</div>
+    <div className="bg-transparent relative w-[44%] p-10 ">{""}</div>
   ) : (
-    <div className="lg:w-[45%] 3xl:w-fit bg-slate-300 p-5 sm:p-10 rounded-2xl">
-      <div>
+    <div className="lg:w-[45%] 3xl:w-fit bg-slate-300 p-5 rounded-2xl">
+      <div className="flex justify-center">
         <div id="image" className="w-40 md:w-fit">
-          <img src={require(`../../../assets/project/${img_url}`)} alt="" />
+          <img
+            src={require(`../../../assets/project/${img_url}`)}
+            alt={title}
+            className="rounded-md w-fit"
+          />
         </div>
       </div>
       <div className="text-white flex flex-col justify-center sm:flex-row sm:items-center sm:justify-between m-5">
@@ -18,7 +22,7 @@ const Card = (props) => {
           </h3>
           <p className="mt-2 text-md sm:text-lg text-slate-700">{label}</p>
         </div>
-        <button className="w-full mt-3 sm:mt-0 sm:w-fit font-semibold border border-2 border-grassGreen-300 text-slate-700 px-3 py-2 hover:bg-grassGreen-300 hover:text-white">
+        <button className="w-full rounded-md mt-3 sm:mt-0 sm:w-fit font-semibold border border-2 border-grassGreen-300 text-slate-700 px-3 py-2 hover:bg-grassGreen-300 hover:text-white">
           View
         </button>
       </div>
